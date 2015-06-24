@@ -19,6 +19,7 @@ Documentation to get DC SMS up and running on your development machines.
 * Redis server
 * Py-Redis
 * Clone the project into your local machine and import the project from eclipse. simple!
+* Create your mysql db if it dosen't exists - name it 'dc_sms-server' *MANDATORY
 * Run command : 
 mysql dc_sms_server -u<username> -p<username> <dcsmsserver/dcsmsserver/svc/static/src/res/db/dc_sms_server.sql 
 to create / update the database.
