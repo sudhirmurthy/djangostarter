@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{%block content %}
+<style>
+body {
+    background-color: white;
+}
+
+#loginbox {
+    margin-top: 40px;
+}
+
+#loginbox > div:first-child {        
+    padding-bottom: 10px;    
+}
+
+</style>
+<div class="container">    
+    <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
+        <div class="alert" style="background-color:#d3d3d3;border: 1px solid grey;">
+            <div class="alert" style="background-color:#000000;">
+            	<div class="text-center" style="font-family:Open Sans;font-size:1.3em;"><span style="color:#ffffff"><b> Login </b></span></div>
+            </div>    
+            <div>
+                <form action="login" method="post" class="form-horizontal">
+                {% csrf_token %}
+                    <div class="input-group" style="margin-bottom: 25px;">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username" required="required">                                        
+                    </div>
+                    <div class="input-group" style="margin-bottom: 25px;">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password" required="required">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 25px;">
+                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                            <button class="btn btn-primary bt-md pull-right"><i class="fa fa-sign-in fa-lg"></i> Log in</button>
+                            <center><b><p>{{ invalidMessage }}</p></b><center>                          
+                        </div>
+                    </div>
+               </form>     
+            </div>                     
+        </div>  
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+    $("#left-menu").css("display","none");
+    $("#ul-menu").css("display","none");
+    $("#btn-group-login").css("display","none");
+});
+
+</script>
+{% endblock %}
