@@ -21,6 +21,8 @@ A simple django app starter template for app/services which includes
 * python-pySql community server edition, postgres or mongodb + pymongo driver
 * clone the project into your local machine and import the project from eclipse. simple!
 * create your mysql db if it dosen't exists - name it 'dc_sms-server' *MANDATORY
+* for mysql - navigate to djangostarter/svc/static/src/res/db and run mysql django_starter -uroot -p < django_starter.sql
+* for pg    - navigate to djangostarter/svc/static/src/res/db and run pg_restore
 
 ### How to run tests
 *  works as-is and no tests included.

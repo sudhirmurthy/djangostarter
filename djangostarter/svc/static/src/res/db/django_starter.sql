@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.34, for osx10.6 (i386)
 --
--- Host: localhost    Database: dc_sms_server
+-- Host: localhost    Database: django_starter
 -- ------------------------------------------------------
 -- Server version	5.5.34
 
@@ -127,7 +127,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$10000$YA9ScGryTUyJ$N/P8brsAhERULJ6CLMs7NZ2RxXVQflSiOE9ET1n4dJ0=','2015-06-24 08:29:36',1,'admin','','','sudhir@digicollectgis.com',1,1,'2015-06-24 08:29:36');
+INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$10000$4Jbt3MSMHGDJ$nUEylFwZVHLV3/xjPVwRO/bVst1wzIOQRBlj4QeXdLQ=','2015-06-28 03:07:22',1,'superuser','','','superuser@superuser.com',1,1,'2015-06-28 03:07:22');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -308,4 +308,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-06-24 14:47:29
+-- Dump completed on 2015-06-28  8:45:49
