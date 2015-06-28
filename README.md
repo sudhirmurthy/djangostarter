@@ -1,7 +1,8 @@
 # README - djangostarter v0.1 #
 
 A simple django app starter template for app/services which includes
-- django auth
+- fully responsive UI (tested on chrome / safari / firefox / iphone 4,5,6, ipads and android 4+ devices)
+- django auth integration
 - bootstrapv3.2.0
 - bootbox
 - chartjs
