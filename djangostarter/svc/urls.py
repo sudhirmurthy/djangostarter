@@ -7,7 +7,7 @@ import django.contrib.auth
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('dcsmsserver.svc.views',
+urlpatterns = patterns('djangostarter.svc.views',
      url(r'^$', 'index', name='index'),
      url(r'index','index', name='index')
 )

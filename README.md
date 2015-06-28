@@ -1,45 +1,52 @@
-# README - DCSMS Server v0.1 #
+# README - djangostarter v0.1 #
 
-Documentation to get DC SMS up and running on your development machines.
-
-### What is this repository for? ###
-
-* Quick summary
- - DCSMSServer is DigiCollect's indigenous sms server application built for use by any digicollect client (cloud/web/mobile app). The design philosophy of dcsmsserver is to abstract the sms service provider functionality it uses (solutions infini) with all it's clients.
+A simple django app starter template for app/services which includes
+- django auth
+- bootstrapv3.2.0
+- bootbox
+- chartjs
+- touch-punch
+- jqueryv2.1.1 and jquery-uiv1.10.4 
+- django orm(obvious) - db scripts for postgres,mysql and mongodb
 
 * Version 0.1 (Beta)
 
 ### How do I get set up? ###
 
 * Eclipse Luna
-* Python 2.7
-* Django version 1.5.5 (Strict)
-* Install Pydev - From eclipse > software updates> (http://pydev.org/updates)
-* Python-MySql community server edition
-* Redis server
-* Py-Redis
-* Clone the project into your local machine and import the project from eclipse. simple!
-* Create your mysql db if it dosen't exists - name it 'dc_sms-server' *MANDATORY
-* Run command : 
-mysql dc_sms_server -u<username> -p<username> <dcsmsserver/dcsmsserver/svc/static/src/res/db/dc_sms_server.sql 
-to create / update the database.
-* Finally, Run as py-dev django project
+* python v2.7 or v3+
+* django version 1.5.5 and above
+* install pydev - From eclipse > software updates> (http://pydev.org/updates)
+* python-pySql community server edition, postgres or mongodb + pymongo driver
+* clone the project into your local machine and import the project from eclipse. simple!
+* create your mysql db if it dosen't exists - name it 'dc_sms-server' *MANDATORY
 
 ### How to run tests
-* Python unit test modules
+*  works as-is and no tests included.
+*  run inspectdb/syncdb commands to create your backend schema.
 
 ### Deployment instructions
-* Nginx web server
+
+* Nginx Web Server
 * Nginx script
-* creation of dns - dcsmsserver.digicollect.net/
-*
+* Gunicorn
+* Supervisor
+* A CDN for static content
+
 ### Contribution guidelines ###
+All contributions in favour of creating a robust django server set-up please.
+
+* Open for proposal in adding a cache/datastore - redis,rabbitmq
+* distributed tasks - celery
+* Replication / Merge-replication scripts for postgres/mysql/mongodb
+* Sharding for mongodb
+* puppet scripts for deployment(nginx + gunicorn + supervisor)
 
 * Writing tests
-- Simple Python unit tests
+- Simple python unit tests
 
 * Code review
-- Sudhir Murthy (sudhir@digicollectgis.com)
+- Sudhir Murthy (sudhir@buildmasters.co.in)
 
 * Other guidelines
 - Sudhir Murthy
@@ -47,4 +54,3 @@ to create / update the database.
 ### Who do I talk to? ###
 
 * Sudhir Murthy
-* Renu Hiremath
